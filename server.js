@@ -35,7 +35,7 @@ function createTemplate(data){
     heading=data.heading;
     date=data.date;
     body=data.body;
-var htmltemplate= `
+var htmlTemplate= `
 <html>
     <head>
         <title>
