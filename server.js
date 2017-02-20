@@ -65,16 +65,10 @@ var htmltemplate= `
 }
 app.get('/:articlename', function (req,res){
     var articlename=req.params.articlename;
-res.sendFile(createTemplate(articles[articlename]))
+res.send(createTemplate(articles[articlename]));
 });
 
-app.get('/article-two.html', function (req,res){
-res.sendFile(path.join(__dirname, 'ui', 'article-two.html'))
-});
 
-app.get('/article-three.html', function (req,res){
-res.sendFile(path.join(__dirname, 'ui', 'article-three.html'))
-});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
