@@ -10,19 +10,19 @@ app.get('/', function (req, res) {
 });
 
 var articles = {
-    'articleone' : {
+    'article-one' : {
 title:'article-one',
 heading:'article',
 date:'20/02/17',
 body:     '    hello, vamsi krishna is a bad boy. Please leave'
 },
-'articletwo' : {
+'article-two' : {
  title:'article-two',
  heading:'article',
  date:'21/02/17',
  body:     '    hello, vamsi krishna is a good boy. Please leave'
 },
-'articlethree' : {
+'article-three' : {
  title:'article-three',
  heading:'article',
  date:'22/02/17',
