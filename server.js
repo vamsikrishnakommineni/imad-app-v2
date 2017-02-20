@@ -9,8 +9,63 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one.html', function (req,res){
-res.sendFile(path.join(__dirname, 'ui', 'article-one.html'))
+var articles = {
+    articleone : {
+title:'article-one',
+heading:'article',
+date:'date',
+body:     '    hello, vamsi krishna is a bad boy. Please leave'
+},
+articletwo : {
+ title:'article-two',
+ heading:'article',
+ date:'date',
+ body:     '    hello, vamsi krishna is a good boy. Please leave'
+},
+articlethree : {
+ title:'article-three',
+ heading:'article',
+ date:'date',
+ body:     '    hello, vamsi krishna is a bad and good boy. Please leave'
+}
+};
+
+function createTemplate(data){
+    title = data.title;
+    heading=data.heading;
+    date=data.date;
+    body=data.body;
+var htmltemplate= `
+<html>
+    <head>
+        <title>
+            ${title}
+        </title>
+     <link href="/ui/style.css" rel="stylesheet"/>
+    </head>    
+        <body>
+            <div class="container">
+            <div>
+                <h1>${heading}</h1>
+            </div>
+            <div>
+                <h2>${date}</h2>
+            </div>
+            <hr/>
+            <div>
+            <p>
+                ${body}
+            </p>
+            </div>
+            </div>
+        </body>
+    
+ </html>
+ `;
+}
+app.get('/:articlename', function (req,res){
+    var articlename=req.params.articlename;
+res.sendFile(createTemplate(articles[articlename]))
 });
 
 app.get('/article-two.html', function (req,res){
