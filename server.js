@@ -13,19 +13,19 @@ var articles = {
     articleone : {
 title:'article-one',
 heading:'article',
-date:'date',
+date:'20/02/17',
 body:     '    hello, vamsi krishna is a bad boy. Please leave'
 },
 articletwo : {
  title:'article-two',
  heading:'article',
- date:'date',
+ date:'21/02/17',
  body:     '    hello, vamsi krishna is a good boy. Please leave'
 },
 articlethree : {
  title:'article-three',
  heading:'article',
- date:'date',
+ date:'22/02/17',
  body:     '    hello, vamsi krishna is a bad and good boy. Please leave'
 }
 };
