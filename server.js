@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 var articles = {
-    'article-one' : {
+    'article-one.html' : {
 title:'artic',
 heading:'article',
 date:'20/02/17',
@@ -31,7 +31,7 @@ body:     '    hello, vamsi krishna is a bad boy. Please leave'
 };
 
 function createTemplate(data){
-    title = data.title;
+    title=data.title;
     heading=data.heading;
     date=data.date;
     body=data.body;
