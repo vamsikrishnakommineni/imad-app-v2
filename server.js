@@ -11,20 +11,20 @@ app.get('/', function (req, res) {
 
 var articles = {
     'article-ones' : {
-title:'artic',
-heading:'article',
+title:'artickjsdncks',
+heading:'article1',
 date:'20/02/17',
 body:     '    hello, vamsi krishna is a bad boy. Please leave'
 },
 'article-two' : {
- title:'artic',
- heading:'article',
+ title:'articcdsc',
+ heading:'article2',
  date:'21/02/17',
  body:     '    hello, vamsi krishna is a good boy. Please leave'
 },
 'article-three' : {
- title:'artic',
- heading:'article',
+ title:'articcsa',
+ heading:'article3',
  date:'22/02/17',
  body:     '    hello, vamsi krishna is a bad and good boy. Please leave'
 }
