@@ -31,10 +31,10 @@ body:     '    hello, vamsi krishna is a bad boy. Please leave'
 };
 
 function createTemplate(data){
-    title=data.title;
-    heading=data.heading;
-    date=data.date;
-    body=data.body;
+    var title=data.title;
+    var heading=data.heading;
+    var date=data.date;
+    var body=data.body;
 var htmlTemplate= `
 <html>
     <head>
