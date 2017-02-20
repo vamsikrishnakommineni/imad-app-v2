@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 var articles = {
-    'article-one.html' : {
+    'article-ones' : {
 title:'artic',
 heading:'article',
 date:'20/02/17',
