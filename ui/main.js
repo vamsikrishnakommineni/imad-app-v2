@@ -4,7 +4,7 @@ var element = document.getElementById('gain');
 element.innerHTML='newvalue';
 
 var img = document.getElementById('madi');
-img.onClick = function(){
+img.onclick = function(){
   var interval = setInterval(moveRight, 100);
  
 };
