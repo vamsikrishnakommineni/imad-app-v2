@@ -2,15 +2,14 @@ console.log('Loaded!');
 
 var element = document.getElementById('gain');
 element.innerHTML='newvalue';
-
+ var marginLeft=0;
 var img = document.getElementById('madi');
 img.onclick = function(){
-  var interval = setInterval(moveRight, 100);
+  var interval = setInterval(moveRight, 50);
  
 };
 
 function moveRight(){
-    var marginLeft=0;
-    marginLeft=marginLeft+10;
+    marginLeft=marginLeft+5;
      img.style.marginLeft = marginLeft+ 'px'; 
 }
