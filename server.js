@@ -68,6 +68,7 @@ app.get('/:articleName', function (req,res){
     var articleName=req.params.articleName;
 res.send(createTemplate(articles[articleName]));
 });
+
 var counter=0;
 app.get('/counterplus',function(req,res){
    counter=counter+1;
