@@ -31,5 +31,5 @@ button.onclick = function(){
         }
     };
     request.open('GET','http://vamsikrishnakommineni.imad.hasura-app.io/counterplus',true);
-    req.send =null;
+    request.send(null);
 };
