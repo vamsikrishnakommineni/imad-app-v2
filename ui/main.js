@@ -35,7 +35,7 @@ button.onclick = function(){
 };
 
 var nameinput = document.getElementById('name');
-var name=nameinput.value;
+var names=nameinput.value;
 var submit = document.getElementById('submit');
 submit.onclick = function(){
     names=['name1','name2','name3','name4'];
