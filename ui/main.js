@@ -33,3 +33,17 @@ button.onclick = function(){
     request.open('GET','http://vamsikrishnakommineni.imad.hasura-app.io/counterplus',true);
     request.send(null);
 };
+
+var nameinput = document.getElementById('name');
+var name=nameinput.value;
+var submit = document.getElementById('submit');
+submit.onclick = function(){
+    names=['name1','name2','name3','name4'];
+    list='';
+    for(i=0;i<names.length;i++){
+        list += '<li>'+names[i]+'</li>';
+    }
+    var ul=document.getElementById('namelist');
+    ul.innerHTML = list;
+};
+
