@@ -17,6 +17,11 @@ app.get('/counterplus',function(req, res){
    res.send(counter.toString());
 });
 
+app.get('/submit-name/:name',function(req,res){
+    var name = req.params.name;
+    names.push(name);
+    res.send(JSON.stringify(names));
+});
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
