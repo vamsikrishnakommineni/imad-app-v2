@@ -42,8 +42,7 @@ submit.onclick = function(){
     request.onreadystatechange = function(){
         if(request.readyState === XMLHttpRequest.DONE){
             if(request.status === 200){
-                var nameinput = document.getElementById('name');
-var name=nameinput.value;
+            
    names=request.responseText;
     names=JSON.parse(names);
     list='';
@@ -55,7 +54,8 @@ var name=nameinput.value;
 
             }}
             };
-          
+              var nameinput = document.getElementById('name');
+var name=nameinput.value;
     request.open('GET','http://vamsikrishnakommineni.imad.hasura-app.io/submit-name?name=' +name ,true);
     request.send(null);
 };
