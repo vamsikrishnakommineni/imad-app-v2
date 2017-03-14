@@ -43,7 +43,7 @@ submit.onclick = function(){
         if(request.readyState === XMLHttpRequest.DONE){
             if(request.status === 200){
                 var nameinput = document.getElementById('name');
-var names=nameinput.value;
+var name=nameinput.value;
    names=request.responseText;
     names=JSON.parse(names);
     list='';
